@@ -2,7 +2,7 @@
 
 Maven configuration used to bootstrap the checkout of all SlipStream repositories.
 
-# Clone Repositories
+## Clone Repositories
 
 This script will clone all of the repositories that are required to
 build the SlipStream service.  To perform the checkout, clone this
@@ -31,8 +31,8 @@ $ mvn -P public generate-sources
 With these URLs, you will _not_ be able to push changes you make in 
 the modules back to GitHub.
 
-Selecting Versions
-------------------
+
+## Selecting Versions
 
 By default, the clone will checkout the **master** branch for each
 repository.  You can select an alternate branch or tag for all of the
@@ -51,7 +51,19 @@ $ mvn -Dslipstream.client.version=v2.5-community generate-sources
 For other repositories, just replace "Client" with the relevant
 repository name.
 
-# License and copyright
+
+## Updating Repositories
+
+You should use the usual git command `git pull` from within each
+repository to update to the lastest version of the defined branch.
+Using the command:
+```
+$ for i in SlipStream*; do (cd $i; git pull); done
+```
+will do this for all of the SlipStream repositories in one go.
+
+
+## License and copyright
 
 Copyright (C) 2015 SixSq Sarl (sixsq.com)
 
