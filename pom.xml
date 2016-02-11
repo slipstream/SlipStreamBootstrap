@@ -77,6 +77,19 @@
           </execution>
 
           <execution>
+            <id>SlipStreamClientAPI</id>
+            <phase>generate-sources</phase>
+            <goals>
+              <goal>checkout</goal>
+            </goals>
+            <configuration>
+              <developerConnectionUrl>${scm.prefix}/SlipStreamClientAPI</developerConnectionUrl>
+              <scmVersion>${slipstream.client.version}</scmVersion>
+              <checkoutDirectory>SlipStreamClientAPI</checkoutDirectory>
+            </configuration>
+          </execution>
+
+          <execution>
             <id>SlipStreamConnectors</id>
             <phase>generate-sources</phase>
             <goals>
