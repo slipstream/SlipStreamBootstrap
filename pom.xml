@@ -30,6 +30,7 @@
 
     <slipstream.version>${slipstream.version.default}</slipstream.version>
     <slipstream.client.version>${slipstream.version.default}</slipstream.client.version>
+    <slipstream.client.api.version>${slipstream.version.default}</slipstream.client.api.version>
     <slipstream.connectors.version>${slipstream.version.default}</slipstream.connectors.version>
     <slipstream.server.version>${slipstream.version.default}</slipstream.server.version>
     <slipstream.server.deps.version>${slipstream.version.default}</slipstream.server.deps.version>
@@ -84,7 +85,7 @@
             </goals>
             <configuration>
               <developerConnectionUrl>${scm.prefix}/SlipStreamClientAPI</developerConnectionUrl>
-              <scmVersion>${slipstream.client.version}</scmVersion>
+              <scmVersion>${slipstream.client.api.version}</scmVersion>
               <checkoutDirectory>SlipStreamClientAPI</checkoutDirectory>
             </configuration>
           </execution>
