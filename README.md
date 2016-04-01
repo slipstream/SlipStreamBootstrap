@@ -8,7 +8,7 @@ development environment.
 
 ## License and copyright
 
-Copyright (C) 2015 SixSq Sarl (sixsq.com)
+Copyright © 2016 [SixSq Sarl](http://sixsq.com)
 
 The code in the public repositories is licensed under the Apache
 license.
