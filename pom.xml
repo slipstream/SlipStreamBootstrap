@@ -78,15 +78,15 @@
           </execution>
 
           <execution>
-            <id>SlipStreamClientAPI</id>
+            <id>SlipStreamClojureAPI</id>
             <phase>generate-sources</phase>
             <goals>
               <goal>checkout</goal>
             </goals>
             <configuration>
-              <developerConnectionUrl>${scm.prefix}/SlipStreamClientAPI</developerConnectionUrl>
+              <developerConnectionUrl>${scm.prefix}/SlipStreamClojureAPI</developerConnectionUrl>
               <scmVersion>${slipstream.client.api.version}</scmVersion>
-              <checkoutDirectory>SlipStreamClientAPI</checkoutDirectory>
+              <checkoutDirectory>SlipStreamClojureAPI</checkoutDirectory>
             </configuration>
           </execution>
 
