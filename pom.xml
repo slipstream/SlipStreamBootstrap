@@ -35,6 +35,7 @@
     <slipstream.server.version>${slipstream.version.default}</slipstream.server.version>
     <slipstream.server.deps.version>${slipstream.version.default}</slipstream.server.deps.version>
     <slipstream.ui.version>${slipstream.version.default}</slipstream.ui.version>
+    <slipstream.tests.version>${slipstream.version.default}</slipstream.tests.version>
 
   </properties>
 
@@ -139,6 +140,19 @@
               <developerConnectionUrl>${scm.prefix}/SlipStreamUI</developerConnectionUrl>
               <scmVersion>${slipstream.ui.version}</scmVersion>
               <checkoutDirectory>SlipStreamUI</checkoutDirectory>
+            </configuration>
+          </execution>
+
+          <execution>
+            <id>SlipStreamTests</id>
+            <phase>generate-sources</phase>
+            <goals>
+              <goal>checkout</goal>
+            </goals>
+            <configuration>
+              <developerConnectionUrl>${scm.prefix}/SlipStreamTests</developerConnectionUrl>
+              <scmVersion>${slipstream.tests.version}</scmVersion>
+              <checkoutDirectory>SlipStreamTests</checkoutDirectory>
             </configuration>
           </execution>
 
