@@ -28,6 +28,10 @@
     <slipstream.ui.version>${slipstream.version.default}</slipstream.ui.version>
     <slipstream.tests.version>${slipstream.version.default}</slipstream.tests.version>
 
+    <slipstream.server.enterprise.version>${slipstream.version.default}</slipstream.server.enterprise.version>
+    <slipstream.connectors.enterprise.version>${slipstream.version.default}</slipstream.connectors.enterprise.version>
+    <slipstream.pricing.version>${slipstream.version.default}</slipstream.pricing.version>
+
   </properties>
 
   <!-- To use public GitHub URL for repositories use the "-P public" option -->
@@ -59,7 +63,7 @@
                 </goals>
                 <configuration>
                   <developerConnectionUrl>${scm.sixsq.prefix}/SlipStreamServer</developerConnectionUrl>
-                  <scmVersion>${slipstream.version}</scmVersion>
+                  <scmVersion>${slipstream.server.enterprise.version}</scmVersion>
                   <checkoutDirectory>SlipStreamServerEnterprise</checkoutDirectory>
                 </configuration>
               </execution>
@@ -72,8 +76,21 @@
                 </goals>
                 <configuration>
                   <developerConnectionUrl>${scm.sixsq.prefix}/SlipStreamConnectors</developerConnectionUrl>
-                  <scmVersion>${slipstream.version}</scmVersion>
+                  <scmVersion>${slipstream.connectors.enterprise.version}</scmVersion>
                   <checkoutDirectory>SlipStreamConnectorsEnterprise</checkoutDirectory>
+                </configuration>
+              </execution>
+
+              <execution>
+                <id>SlipStreamPricing</id>
+                <phase>generate-sources</phase>
+                <goals>
+                  <goal>checkout</goal>
+                </goals>
+                <configuration>
+                  <developerConnectionUrl>${scm.sixsq.prefix}/SlipStreamPricing</developerConnectionUrl>
+                  <scmVersion>${slipstream.pricing.version}</scmVersion>
+                  <checkoutDirectory>SlipStreamPricing</checkoutDirectory>
                 </configuration>
               </execution>
 
