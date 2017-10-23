@@ -30,6 +30,7 @@
 
     <slipstream.python.api.version>${slipstream.version.default}</slipstream.python.api.version>
     <slipstream.webui.version>${slipstream.version.default}</slipstream.webui.version>
+    <slipstream.job.engine.version>${slipstream.version.default}</slipstream.job.engine.version>
 
     <slipstream.server.enterprise.version>${slipstream.version.default}</slipstream.server.enterprise.version>
     <slipstream.connectors.enterprise.version>${slipstream.version.default}</slipstream.connectors.enterprise.version>
@@ -244,8 +245,21 @@
             </goals>
             <configuration>
               <developerConnectionUrl>${scm.prefix}/SlipStreamPythonAPI</developerConnectionUrl>
-              <scmVersion>${slipstream.webui.version}</scmVersion>
+              <scmVersion>${slipstream.python.api.version}</scmVersion>
               <checkoutDirectory>SlipStreamPythonAPI</checkoutDirectory>
+            </configuration>
+          </execution>
+
+          <execution>
+            <id>SlipStreamJobEngine</id>
+            <phase>generate-sources</phase>
+            <goals>
+              <goal>checkout</goal>
+            </goals>
+            <configuration>
+              <developerConnectionUrl>${scm.prefix}/SlipStreamJobEngine</developerConnectionUrl>
+              <scmVersion>${slipstream.job.engine.version}</scmVersion>
+              <checkoutDirectory>SlipStreamJobEngine</checkoutDirectory>
             </configuration>
           </execution>
 
