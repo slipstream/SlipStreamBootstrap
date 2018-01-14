@@ -9,10 +9,6 @@
   <name>SlipStreamBootstrap</name>
   <url>http://sixsq.com/</url>
 
-  <prerequisites>
-    <maven>3.0.3</maven>
-  </prerequisites>
-
   <properties>
     <scm.prefix>scm:git:ssh://git@github.com/slipstream</scm.prefix>
     <scm.sixsq.prefix>scm:git:ssh://git@github.com/SixSq</scm.sixsq.prefix>
