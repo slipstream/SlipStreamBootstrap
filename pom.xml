@@ -206,7 +206,7 @@
               <checkoutDirectory>SlipStreamUI</checkoutDirectory>
             </configuration>
           </execution>
-<!--
+
           <execution>
             <id>SlipStreamTests</id>
             <phase>generate-sources</phase>
@@ -219,7 +219,7 @@
               <checkoutDirectory>SlipStreamTests</checkoutDirectory>
             </configuration>
           </execution>
--->
+
           <execution>
             <id>SlipStreamWebUI</id>
             <phase>generate-sources</phase>
