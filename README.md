@@ -2,7 +2,7 @@
 
 Maven configuration used to bootstrap the checkout of all SlipStream 
 repositories. See the 
-[Contributors Guide](http://ssdocs.sixsq.com/en/v2.23/developer_guide/index.html)
+[Contributors Guide](http://ssdocs.sixsq.com/en/latest/developer_guide/index.html)
 for instructions on how to use this repository to bootstrap your 
 development environment.
 
